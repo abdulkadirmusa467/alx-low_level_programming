@@ -4,10 +4,10 @@
  *
  * Return: 0 on success. Error code otherwise
  */
-int main(void)
+int main(voiid)
 {
 int n;
-for (n : wq = 0; n < 10; n++)
+for (n = 0; n < 10; n++)
 printf("%d", n);
 printf("\n");
 return (0);
