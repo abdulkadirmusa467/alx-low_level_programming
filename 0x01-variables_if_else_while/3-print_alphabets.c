@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program entry point
+ * main - Program entry point
  *
  * Return: 0 on success. Error code otherwise
  */
@@ -13,10 +13,6 @@ int main(void)
 	while (n < 52)
 	{
 		if (n < 26)
-		{
-			putchar(a);
-			a++;
-		} else
 		{
 			putchar(a);
 			a++;
