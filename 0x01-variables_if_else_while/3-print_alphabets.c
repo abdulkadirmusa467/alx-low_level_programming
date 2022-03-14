@@ -21,8 +21,6 @@ int main(void)
 			putchar(A);
 			A++;
 		}
-		n++;
-	}
-	putchar('\n');
-	return (0);
+		n++;								        }         								       putchar('\n');
+	 return 0;
 }
