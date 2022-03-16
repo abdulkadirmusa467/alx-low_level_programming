@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main -  prints Holberton, followed by a new line
  * Return: Always 0 (Success)
@@ -17,5 +16,6 @@ _putchar('o');
 _putchar('n');
 _putchar('\n');
 
-												return (0);
+										
+return (0);
 }
