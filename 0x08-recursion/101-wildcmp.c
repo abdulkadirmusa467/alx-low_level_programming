@@ -1,6 +1,8 @@
 #include "main.h"
+
 int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
+
 /**
 * wildcmp - compares two strings recursively,
 * checking for wildcards expansion
@@ -16,12 +18,14 @@ int wildcmp(char *s1, char *s2)
 * this is going to be a sum of return values
 */
 int sum = 0;
+
 /**
 * if we reach the end of s1 and the char in s2 is a *
 * and if the next chars of s2 are *, return 1
 */
 if (*s1 == '\0' && *s2 == '*' && !*move(s2))
 return (1);
+
 /**
 * if the chars are equal in both strings,
 * if we reached the end of s1, return 1
@@ -39,6 +43,7 @@ return (wildcmp(s1 + 1, s2 + 1));
 */
 if (*s1 == '\0' || *s2 == '\0')
 return (0);
+
 /**
 * if the char in s2 is a *
 * finds the address of the first char after the *
@@ -60,6 +65,7 @@ return (!!sum);
 }
 return (0);
 }
+
 /**
 * bandersnatch - checks recursively for all the paths when the
 * characters are equal
@@ -81,6 +87,7 @@ if (*s1 == *s2)
 return (wildcmp(s1, s2));
 return (bandersnatch(s1 + 1, s2));
 }
+
 /**
 * *move - moves the current char past the *
 * @s2: string to iterate over
